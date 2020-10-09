@@ -4,7 +4,7 @@ import "assets/css/Chat.css";
 
 function Chat() {
   return (
-    <div>
+    <div className="chat-container">
       <h2>Chat</h2>
     </div>
   );

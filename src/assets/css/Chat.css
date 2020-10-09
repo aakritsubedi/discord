@@ -1,0 +1,7 @@
+.chat-container {
+  flex: 0.8;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #2f3135;
+}
