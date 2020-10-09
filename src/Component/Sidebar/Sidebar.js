@@ -45,9 +45,9 @@ function Sidebar() {
           <p>#thisIsMyID</p>
         </div>
         <div className="sidebar-profileIcons">
-          <FaIcon icon="fa fa-microphone" color="#ffffff"/>
-          <FaIcon icon="fa fa-headphones" color="#ffffff"/>
-          <FaIcon icon="fa fa-cog" color="#ffffff"/>
+          <FaIcon icon="fa fa-microphone" color="#808080"/>
+          <FaIcon icon="fa fa-headphones" color="#808080"/>
+          <FaIcon icon="fa fa-cog" color="#808080"/>
         </div>
       </div>
     </div>
