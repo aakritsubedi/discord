@@ -1,0 +1,100 @@
+.sidebar-container {
+  flex: 0.2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #2f3135;
+}
+.sidebar-title {
+  padding: 20px;
+  display: flex;
+  color:  #ffffff;
+  align-items: center;
+  background-color: #2f3135;
+  justify-content: space-between;
+  border-bottom: 3px solid #26282c;
+}
+
+.sidebar-channels {
+  flex: 1;
+}
+.sidebar-channel-header {
+  padding: 10px;
+  display: flex;
+  color: #808080;
+  align-items: center;
+  /* background-color: #2f3135; */
+  justify-content: space-between;
+}
+.sidebar-header {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__addChannel {
+  cursor: pointer;
+}
+.sidebar__addChannel:hover {
+  color: #ffffff;
+}
+.sidebar-channelList {
+
+}
+.sidebar-channel {
+
+}
+.sidebar-channel:hover > h4 {
+  color: #ffffff;
+  background-color: #40464b;
+}
+.sidebar-channel > h4 {
+  display: flex;
+  cursor: pointer;
+  color: #808080;
+  padding-left: 15px;
+  align-items: center;
+  background-color: #2f3135;
+}
+.sidebar-channel-hash {
+  padding: 8px;
+  font-size: 30px;
+}
+
+.sidebar-voice {
+  display: flex;
+  padding: 10px;
+  color: #808080;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #808080;
+}
+.voice-info {
+  flex: 1;
+  padding: 10px;
+}
+.voice-info > h3 {
+  color: #4fb185;
+}
+.voice-info > p {
+  font-size: smaller;
+}
+.profile-avatar {
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #808080;
+}
+.sidebar-profile {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #808080;
+}
+.sidebar-profileInfo {
+  flex: 1;
+  padding: 10px;
+  color: #ffffff;
+}
+.sidebar-voiceIcons, .sidebar-profileIcons {
+  display: flex;
+}
