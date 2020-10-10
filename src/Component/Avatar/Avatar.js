@@ -5,7 +5,7 @@ function Avatar({ imgSrc, username }) {
     <div>
       {imgSrc ? 
       (
-        <img src={imgSrc} className='profile-avatar-image' />
+        <img src={imgSrc} className='profile-avatar-image' alt='userimage'/>
       ) :
       (
         <div className='profile-avatar'>{username ? username.split(0,1) : 'dD' }</div>
