@@ -28,7 +28,7 @@ function Sidebar() {
         </div>
       </div>
       <div className="sidebar-voice">
-        <FaIcon icon="fa fa-signal" className="sidebar-voiceIcon" size="32" color="#4fb185"/>
+        <FaIcon icon="fa fa-signal" size="32" color="#4fb185"/>
         <div className="voice-info">
           <h3>Voice Connected</h3>
           <p>Stream</p>
@@ -45,9 +45,9 @@ function Sidebar() {
           <p>#thisIsMyID</p>
         </div>
         <div className="sidebar-profileIcons">
-          <FaIcon icon="fa fa-microphone" color="#808080"/>
-          <FaIcon icon="fa fa-headphones" color="#808080"/>
-          <FaIcon icon="fa fa-cog" color="#808080"/>
+          <FaIcon icon="fa fa-microphone" />
+          <FaIcon icon="fa fa-headphones" />
+          <FaIcon icon="fa fa-cog" />
         </div>
       </div>
     </div>
