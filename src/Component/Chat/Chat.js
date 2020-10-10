@@ -12,6 +12,8 @@ function Chat() {
       <ChatHeader channelName='Test Channel' color='#ffffff' />
       <div className="chat-messages">
         <Message />
+        <Message />
+        <Message />
       </div>
       <div className="chat-input">
         <FaIcon icon="fa fa-plus-circle" size="32" color='#ffffff' />

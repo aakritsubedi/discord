@@ -84,6 +84,7 @@
   color: #ffffff;
   border-radius: 50%;
   font-weight: bolder;
+  width: fit-content;
   background-color: #808080;
 }
 .sidebar-profile {
