@@ -1,6 +1,7 @@
 import React from "react";
 
 import FaIcon from "Component/FaIcon";
+import Avatar from "Component/Avatar";
 import SidebarChannel from "Component/SidebarChannel";
 
 import "assets/css/Sidebar.css";
@@ -39,7 +40,7 @@ function Sidebar() {
         </div>
       </div>
       <div className="sidebar-profile">
-        <span className="profile-avatar">A</span>
+        <Avatar imgSrc='http://aakritsubedi.com.np/images/profile_new.jpg' />
         <div className="sidebar-profileInfo">
           <h3>@aakrit_subedi</h3>
           <p>#thisIsMyID</p>

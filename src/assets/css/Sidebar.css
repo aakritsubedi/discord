@@ -80,12 +80,17 @@
   font-size: smaller;
 }
 .profile-avatar {
-  padding: 8px;
+  padding: 10px;
   color: #ffffff;
   border-radius: 50%;
   font-weight: bolder;
   width: fit-content;
   background-color: #808080;
+}
+.profile-avatar-image {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
 }
 .sidebar-profile {
   display: flex;

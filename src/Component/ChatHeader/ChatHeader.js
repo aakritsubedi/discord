@@ -14,16 +14,16 @@ function ChatHeader({ channelName }) {
         </h3>
       </div>
       <div className="chat-header-right">
-        <FaIcon icon="fa fa-bell" />
-        <FaIcon icon="fa fa-map-marker" />
-        <FaIcon icon="fa fa-users" />
+        <FaIcon icon="fa fa-bell"  size='20' />
+        <FaIcon icon="fa fa-map-marker"  size='20' />
+        <FaIcon icon="fa fa-users"  size='20' />
 
         <div className="chat-header-search">
           <input type="text" placeholder='Search' />
           <FaIcon icon = 'fa fa-search' />
         </div>
-        <FaIcon icon = 'fa fa-inbox' />
-        <FaIcon icon = 'fa fa-question-circle' />
+        <FaIcon icon = 'fa fa-inbox'  size='20' />
+        <FaIcon icon = 'fa fa-question-circle' color='green' size='20' />
       </div>
     </div>
   );
