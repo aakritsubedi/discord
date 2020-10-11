@@ -4,16 +4,18 @@ import Avatar from "Component/Avatar";
 
 import "assets/css/Message.css";
 
-function Message() {
+function Message({ messages }) {
+  const { user, message, timestamp } = messages;
+
   return (
     <div className="message">
-      <Avatar imgSrc='http://aakritsubedi.com.np/images/profile_new.jpg' />
+      <Avatar imgSrc={user.photo} />
       <div className="message-info">
         <h4>
-          aakrit_subedi
-          <span className="message-timestamp">timestamp</span>
+          { user.displayName }
+          <span className="message-timestamp">{ (new Date(timestamp?.toDate())).toUTCString() }</span>
         </h4>
-        <p className="message-text">This is a message ...</p>
+        <p className="message-text">{message}</p>
       </div>
     </div>
   );
