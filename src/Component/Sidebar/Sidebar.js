@@ -1,12 +1,23 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 import FaIcon from "Component/FaIcon";
 import Avatar from "Component/Avatar";
 import SidebarChannel from "Component/SidebarChannel";
 
+import { auth } from "Firebase";
+
+import { selectUser } from "features/users/userSlice";
+
 import "assets/css/Sidebar.css";
 
 function Sidebar() {
+  const user = useSelector(selectUser);
+
+  const logout = () => {
+    auth.signOut();
+  }
+
   return (
     <div className="sidebar-container">
       <div className="sidebar-title">
@@ -31,7 +42,7 @@ function Sidebar() {
       <div className="sidebar-voice">
         <FaIcon icon="fa fa-signal" size="32" color="#4fb185"/>
         <div className="voice-info">
-          <h3>Voice Connected</h3>
+          <h4>Voice Connected</h4>
           <p>Stream</p>
         </div>
         <div className="sidebar-voiceIcons">
@@ -40,10 +51,10 @@ function Sidebar() {
         </div>
       </div>
       <div className="sidebar-profile">
-        <Avatar imgSrc='http://aakritsubedi.com.np/images/profile_new.jpg' />
+        <Avatar imgSrc={user.photo} onClick={logout} />
         <div className="sidebar-profileInfo">
-          <h3>@aakrit_subedi</h3>
-          <p>#thisIsMyID</p>
+        <h3>{user.displayName}</h3>
+        <p>{user.email}</p>
         </div>
         <div className="sidebar-profileIcons">
           <FaIcon icon="fa fa-microphone" />
