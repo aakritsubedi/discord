@@ -1,7 +1,7 @@
 .chat-container {
   flex: 0.75;
-  height: 100vh;
   display: flex;
+  max-height: 100vh;
   flex-direction: column;
   background-color: #363a3f;
 }
@@ -75,4 +75,6 @@
 
 .chat-messages {
   flex: 1;
+  height: 75vh;
+  overflow-y: scroll;
 }
